@@ -204,11 +204,24 @@ export default function LoginContent() {
                   </Button>
 
                   <p className="text-xs text-center text-muted-foreground px-4">
-                    By continuing, you agree to grant read access to your GitHub repositories. We never access private data without permission.
+                    By continuing, you agree to our{" "}
+                    <Link
+                      href="/terms"
+                      className="underline underline-offset-2 hover:text-foreground"
+                    >
+                      Terms of Service
+                    </Link>{" "}
+                    and{" "}
+                    <Link
+                      href="/privacy"
+                      className="underline underline-offset-2 hover:text-foreground"
+                    >
+                      Privacy Policy
+                    </Link>
+                    . We only request the minimum GitHub permissions required.
                   </p>
                 </div>
-
-
+                
               </CardContent>
             </Card>
 

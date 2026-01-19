@@ -21,8 +21,6 @@ export default function HomePage() {
           </a>
         </p>
       </StickyBanner>
-
-
       <Header />
       <Hero />
       <Features />
