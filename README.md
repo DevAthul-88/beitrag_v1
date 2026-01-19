@@ -1,36 +1,209 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Beitrag — Developer Productivity Dashboard
 
-## Getting Started
+> **Enterprise-grade GitHub analytics dashboard for visualizing developer productivity using real-world engineering metrics.**
 
-First, run the development server:
+Beitrag is a portfolio SaaS-style application that integrates with GitHub to provide actionable insights into a developer’s activity, code contributions, and engineering performance. The project focuses on **data visualization, system design, and production-ready UI/UX**, rather than feature bloat.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Live Demo
+
+> *https://beitrag.netlify.app/*
+
+---
+
+## 📌 Why This Project Exists
+
+Modern engineering teams rely on metrics to understand productivity, collaboration, and delivery velocity. GitHub exposes rich activity data, but it is fragmented and difficult to interpret at a glance.
+
+**Beitrag was built to:**
+
+* Aggregate GitHub activity into meaningful metrics
+* Visualize developer behavior using clean, readable charts
+* Demonstrate real-world frontend architecture and API integration
+* Showcase enterprise-level UI/UX and data handling in a portfolio project
+
+---
+
+## 🧠 Key Design Principles
+
+* **Signal over features** — only high-impact metrics
+* **Consistency over flexibility** — clear default time ranges
+* **Readability over density** — charts designed for clarity
+* **Production-grade patterns** — auth, loading states, error handling
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication
+
+* Secure user authentication via **Supabase Auth**
+* OAuth-based GitHub login
+* Token handling designed to avoid exposing sensitive data
+
+---
+
+### 📊 Dashboard Overview
+
+High-level metrics presented at a glance:
+
+* Total commits (recent activity)
+* Pull requests opened & merged
+* Active repositories
+* Contribution trends
+
+---
+
+### 📈 Commit Analytics
+
+* Commit frequency over time
+* Commit trends visualization
+* Aggregated commit counts derived from GitHub events
+
+---
+
+### 🗓 Activity Heatmap
+
+* GitHub-style contribution calendar
+* Visualizes daily activity patterns
+* Helps identify consistency and contribution streaks
+
+---
+
+### 🔁 Pull Request Metrics
+
+* Total PRs opened and merged
+* PR size distribution
+* Productivity insights based on contribution patterns
+
+---
+
+### 🧩 Language Breakdown
+
+* Pie chart showing languages used across repositories
+* Derived from repository metadata
+* Helps identify primary technical focus areas
+
+---
+
+### 📦 Repository Activity
+
+* List of active repositories
+* Commit counts and last activity timestamps
+* Quick overview of project engagement
+
+---
+
+### 📐 DORA Metrics (Visualization)
+
+* Deployment frequency
+* Lead time for changes
+* Industry-standard DevOps performance indicators
+  *(Presented as visual analytics rather than operational metrics)*
+
+---
+
+### 🎨 UX & UI
+
+* Fully responsive layout
+* Skeleton and GitHub-style loaders
+* Graceful empty states
+* Accessible color contrast (light/dark modes)
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* **Next.js (App Router)**
+* **TypeScript**
+* **Tailwind CSS**
+* **Lucide Icons**
+* **Recharts / Chart.js** (data visualization)
+
+### Backend / Services
+
+* **Supabase** — Authentication & session management
+* **GitHub REST API** — Activity & repository data
+* Server-side data aggregation for metrics
+
+---
+
+## 🔒 Security Considerations
+
+* OAuth tokens are never exposed to the client
+* API requests are scoped to minimum required permissions
+* Auth sessions handled via Supabase’s secure infrastructure
+* No private repository access without explicit permission
+
+---
+
+## ⚙️ Architecture Overview
+
+```txt
+Client (Next.js)
+   ↓
+Supabase Auth (OAuth)
+   ↓
+Server Actions / API Routes
+   ↓
+GitHub REST API
+   ↓
+Data Aggregation & Normalization
+   ↓
+Charts & Metrics Rendering
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This separation ensures:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Clear responsibility boundaries
+* Easier future extension (teams, filters, exports)
+* Predictable data flow
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧪 Error & Edge Case Handling
 
-To learn more about Next.js, take a look at the following resources:
+* GitHub API rate limit awareness
+* Empty state handling for new users
+* Defensive programming for inconsistent API responses
+* Loading placeholders to prevent layout shifts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📉 Known Limitations (Intentional)
 
-## Deploy on Vercel
+* No global time filter (fixed recent activity window)
+* No team collaboration features
+* No email notifications or exports
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+These were **deliberate tradeoffs** to keep the project focused, readable, and aligned with portfolio goals.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🧭 Future Improvements (If Productized)
+
+* Global time range filtering
+* Team-level analytics
+* Webhook-based real-time updates
+* Exportable reports (CSV / PDF)
+* CI/CD integration metrics
+
+---
+
+## 🧠 What This Project Demonstrates
+
+* Real-world OAuth authentication
+* API data normalization and aggregation
+* Complex chart rendering
+* UI state management
+* Production-level component architecture
+* Thoughtful product decision-making
+
+## 📄 License
+
+MIT
+
+---
