@@ -5,6 +5,7 @@ import { ArrowRight, Github } from 'lucide-react';
 import Link from 'next/link';
 import { AnimatedListAll } from './animated-list';
 import { PointerHighlight } from '../ui/pointer-highlight';
+import AnimatedBadge from '../ui/animated-badge';
 
 
 export default function Hero() {
@@ -15,13 +16,14 @@ export default function Hero() {
         {/* LEFT: Content */}
         <div className="flex flex-col justify-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border w-44 bg-card mb-6">
-            <Github className="w-3.5 h-3.5 text-primary" />
-            <span className="text-xs text-muted-foreground font-medium">
-              Powered by GitHub API
-            </span>
-          </div>
+          <div className="mb-4">
+            <AnimatedBadge
+            text="Powered by GitHub API"
+            color="#1447e6"
+            href="https://docs.github.com/en/rest?apiVersion=2022-11-28"
+          />
 
+          </div>
           {/* Heading */}
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-foreground">
             Transform Your{" "}

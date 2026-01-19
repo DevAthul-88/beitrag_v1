@@ -493,10 +493,14 @@ export default function Dashboard() {
 
   const topRepos = repositories?.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 4) || []
 
-  const recentCommits =
-    activity
-      ?.filter((e) => e.type === "PushEvent")
-      .reduce((sum, event) => sum + (event.payload.commits?.length || 0), 0) || 0
+  const recentCommits = Array.isArray(activity)
+    ? activity
+      .filter((e) => e.type === "PushEvent")
+      .reduce(
+        (sum, event) => sum + (event.payload?.commits?.length || 0),
+        0
+      )
+    : 0;
 
   if (userError) {
     return (
