@@ -108,7 +108,7 @@ export default function CommitsTracking() {
     gcTime: 30 * 60 * 1000,
   })
 
-  if (isLoading) return <Loader fullScreen />
+  if (isLoading) return <Loader />
   if (error) return <ErrorState message={(error as Error).message} onRetry={() => refetch()} />
 
   const commits = data?.commits || []

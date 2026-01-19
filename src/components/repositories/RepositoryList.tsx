@@ -229,7 +229,7 @@ export default function RepositoriesPage() {
     setCurrentPage(1)
   }
 
-  if (loading) return <Loader message="Fetching your repositories..." fullScreen />
+  if (loading) return <Loader/>
   if (error) return <ErrorState message={error} fullScreen onRetry={() => window.location.reload()} />
 
   return (

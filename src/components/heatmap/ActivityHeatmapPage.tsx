@@ -309,7 +309,7 @@ export default function ActivityHeatmapPage() {
     return Array.from(years).sort((a, b) => b - a)
   }, [allEvents])
 
-  if (isLoading) return <Loader message="Loading your activity heatmap..." fullScreen />
+  if (isLoading) return <Loader/>
   if (error)
     return (
       <ErrorState

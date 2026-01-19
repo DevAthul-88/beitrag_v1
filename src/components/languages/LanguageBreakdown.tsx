@@ -131,7 +131,7 @@ export default function LanguageBreakdown() {
     return Math.round((bytes / Math.pow(k, i)) * 100) / 100 + " " + sizes[i]
   }
 
-  if (isLoading) return <Loader fullScreen/>
+  if (isLoading) return <Loader/>
   if (error) return <ErrorState message={(error as Error).message} onRetry={() => refetch()} />
 
   const languages = data?.languages || []

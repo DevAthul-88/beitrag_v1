@@ -269,7 +269,7 @@ export default function PullRequestMetrics() {
   }
 
   if (isLoading) {
-    return <Loader message="Fetching your pull request metrics..." fullScreen />
+    return <Loader/>
   }
 
   if (error) {

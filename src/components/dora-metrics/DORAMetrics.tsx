@@ -297,7 +297,7 @@ export default function DORAMetrics() {
   }
 
   if (loading) {
-    return <Loader message="Fetching your DORA metrics..." fullScreen />
+    return <Loader />
   }
 
   if (error) {
