@@ -8,13 +8,13 @@ Beitrag is a portfolio SaaS-style application that integrates with GitHub to pro
 
 ## 🖼 Screenshots
 
-![Screenshot 1](https://i.ibb.co/gZwsyzRz)
-![Screenshot 2](https://i.ibb.co/WWwQFfPD)
-![Screenshot 3](https://i.ibb.co/Y47LRJ6T)
-![Screenshot 4](https://i.ibb.co/fzZz0T84)
-![Screenshot 5](https://i.ibb.co/v42r9nMZ)
-![Screenshot 6](https://i.ibb.co/7xFz9rBJ)
-![Screenshot 7](https://i.ibb.co/KRwLP95)
+![Screenshot 1](https://i.ibb.co/Jj2Xn5s5/bh.png)
+![Screenshot 2](https://i.ibb.co/KjkY7WLN/b5.png)
+![Screenshot 3](https://i.ibb.co/nqsLg4T8/b4.png)
+![Screenshot 4](https://i.ibb.co/PvJvCVTw/b3.png)
+![Screenshot 5](https://i.ibb.co/3mt8KZPB/b2.png)
+![Screenshot 6](https://i.ibb.co/1YxnSRBf/b1.png)
+![Screenshot 7](https://i.ibb.co/MW6GvRg/Beitrag-01-19-2026-03-33-PM.png)
 
 ## 🚀 Live Demo
 
